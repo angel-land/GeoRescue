@@ -66,7 +66,7 @@ export default function FeedPage() {
                             </div>
                         </MetricCard>
                         <MetricCard
-                            className="w-1/2 ml-4 font-semibold"
+                            className="w-1/2 ml-4 font-semibold "
                             title="Temperatura (°C)"
                             value={`${temperature}°`}
                             color="#1581b4"
