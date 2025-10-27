@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
-import Image from 'next/image'
+
 export default function Sidebar() {
     const router = useRouter()
 
@@ -14,26 +14,21 @@ export default function Sidebar() {
     return (
         <aside className="w-64 bg-white shadow-xl shadow-gray-200 flex flex-col justify-between">
             <div>
-                <div className="p-6 border-b border-gray-200 text-center w-62 h-30">
-                    <Image
-                        src="/images/georescuee.png"
-                        width={300}
-                        height={200}
-                        alt="georescue-logo"
-                    />
+                <div className="p-6 border-b border-gray-200 text-center">
+                    <h1 className="text-[#1581b4] text-xl font-bold">Logo</h1>
                 </div>
                 <nav className="flex flex-col mt-4">
                     <Link
                         href="/feed"
                         className="px-6 py-3 text-gray-700 hover:bg-[#F2F9FF] hover:text-[#1581b4] transition"
                     >
-                        Inicio
+                       Inicio
                     </Link>
                     <Link
-                        href="#"
+                        href="/healthMetrics"
                         className="px-6 py-3 text-gray-700 hover:bg-[#F2F9FF] hover:text-[#1581b4] transition"
                     >
-                        Opcion 2
+                        Metricas
                     </Link>
                     <Link
                         href="#"
